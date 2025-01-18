@@ -61,7 +61,17 @@ h2 {
     padding: 1rem;
 }
 
+.card-title-container {
+    display: flex;
+}
+
 .icon {
     width: 32px;
     height: 32px;
+}
+
+.icons {
+    display: flex;
+    align-self: flex-end;
+    gap: 11px;
 }
