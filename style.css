@@ -257,7 +257,7 @@
         display: block;
     }
     #hero-demo .demo-title {
-        font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+        font-size: clamp(2.4375rem, 5vw, 3.8rem);
         font-weight: 900;
         line-height: 1.2em;
         text-align: center;
