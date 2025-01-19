@@ -1,16 +1,16 @@
 const CSbody = document.querySelector('body');
-const CSnavbarMenu = document.querySelector('#cs-navigation');
-const CShamburgerMenu = document.querySelector('#cs-navigation .cs-toggle');
+const CSnavbarMenu = document.querySelector('#demo-navigation');
+const CShamburgerMenu = document.querySelector('#demo-navigation .demo-toggle');
 
 CShamburgerMenu.addEventListener('click', function () {
-    CShamburgerMenu.classList.toggle('cs-active');
-    CSnavbarMenu.classList.toggle('cs-active');
-    CSbody.classList.toggle('cs-open');
+    CShamburgerMenu.classList.toggle('demo-active');
+    CSnavbarMenu.classList.toggle('demo-active');
+    CSbody.classList.toggle('demo-open');
     ariaExpanded();
 });
 
 function ariaExpanded() {
-    const csUL = document.querySelector('#cs-expanded');
+    const csUL = document.querySelector('#demo-expanded');
     const csExpanded = csUL.getAttribute('aria-expanded');
 
     if (csExpanded === 'false') {
@@ -20,10 +20,10 @@ function ariaExpanded() {
     }
 }
 
-const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
+const dropDowns = Array.from(document.querySelectorAll('#demo-navigation .demo-dropdown'));
 for (const item of dropDowns) {
     const onClick = () => {
-        item.classList.toggle('cs-active');
+        item.classList.toggle('demo-active');
     };
     item.addEventListener('click', onClick);
 }
