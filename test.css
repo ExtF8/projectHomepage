@@ -220,7 +220,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     /* Hero */
-    #hero-856 {
+    #hero-demo {
         text-align: center;
         padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
         background-color: #f7f7f7;
@@ -228,7 +228,7 @@
         position: relative;
         z-index: 1;
     }
-    #hero-856 .demo-container {
+    #hero-demo .demo-container {
         width: 100%;
         max-width: 80rem;
         margin: auto;
@@ -238,14 +238,14 @@
         flex-direction: column;
         gap: 3rem;
     }
-    #hero-856 .demo-content {
+    #hero-demo .demo-content {
         max-width: 39.375rem;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    #hero-856 .demo-topper {
+    #hero-demo .demo-topper {
         font-size: 1rem;
         line-height: 1.2em;
         text-transform: uppercase;
@@ -256,7 +256,7 @@
         margin-bottom: 0.25rem;
         display: block;
     }
-    #hero-856 .demo-title {
+    #hero-demo .demo-title {
         font-size: clamp(2.4375rem, 5vw, 3.8125rem);
         font-weight: 900;
         line-height: 1.2em;
@@ -266,7 +266,7 @@
         color: var(--headerColor);
         position: relative;
     }
-    #hero-856 .demo-text {
+    #hero-demo .demo-text {
         font-size: clamp(1rem, 1.5vw, 1.25rem);
         line-height: 1.5em;
         text-align: center;
@@ -275,7 +275,7 @@
         margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
         color: var(--bodyTextColor);
     }
-    #hero-856 .demo-button-solid {
+    #hero-demo .demo-button-solid {
         font-size: 1rem;
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
         text-decoration: none;
@@ -292,7 +292,7 @@
         z-index: 1;
         box-sizing: border-box;
     }
-    #hero-856 .demo-button-solid:before {
+    #hero-demo .demo-button-solid:before {
         content: '';
         position: absolute;
         height: 100%;
@@ -305,10 +305,10 @@
         border-radius: 0.25rem;
         transition: width 0.3s;
     }
-    #hero-856 .demo-button-solid:hover:before {
+    #hero-demo .demo-button-solid:hover:before {
         width: 100%;
     }
-    #hero-856 .demo-picture {
+    #hero-demo .demo-picture {
         width: 100%;
         max-width: 35.625rem;
         height: clamp(25rem, 95vw, 44.5rem);
@@ -318,7 +318,7 @@
         display: block;
         position: relative;
     }
-    #hero-856 .demo-picture img {
+    #hero-demo .demo-picture img {
         position: absolute;
         top: 0;
         left: 0;
@@ -327,7 +327,7 @@
         object-fit: cover;
         object-position: top;
     }
-    #hero-856 .demo-wave {
+    #hero-demo .demo-wave {
         width: 320%;
         height: auto;
         display: block;
@@ -712,27 +712,27 @@
     }
 
     /* Hero */
-    #hero-856 {
+    #hero-demo {
         text-align: left;
     }
-    #hero-856 .demo-container  {
+    #hero-demo .demo-container  {
         flex-direction: row;
         justify-content: space-between;
     }
-    #hero-856 .demo-content {
+    #hero-demo .demo-content {
         width: 40vw;
         flex: none;
         align-items: flex-start;
         order: 2;
     }
-    #hero-856 .demo-title,
-    #hero-856 .demo-text {
+    #hero-demo .demo-title,
+    #hero-demo .demo-text {
         text-align: left;
     }
-    #hero-856 .demo-picture {
+    #hero-demo .demo-picture {
         height: clamp(38.9375rem, 60vw, 50.875rem);
     }
-    #hero-856 .demo-wave {
+    #hero-demo .demo-wave {
         width: 100%;
         left: 0;
         transform: scaleX(-1);
