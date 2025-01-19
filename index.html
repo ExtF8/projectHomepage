@@ -3,214 +3,361 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Homepage</title>
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" />
+        <title>Wellness demo</title>
+        <link rel="icon" type="image/x-icon" href="./icons/meditation.svg" />
+        <link rel="stylesheet" href="./global.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
     </head>
     <body>
-        <header>
-            <div>
-                <img class="header-img" src="./images/pexels-matreding-28271638.jpg" alt="" />
-                <h1>Some Onetname</h1>
+        <!-- Navigation -->
+        <header id="demo-navigation">
+            <div class="demo-container">
+                <!--Nav Logo-->
+                <a href="" class="demo-logo" aria-label="back to home">
+                    <img
+                        src="./images/wellnessLogo.png"
+                        alt="logo"
+                        width="240"
+                        height="32"
+                        aria-hidden="true"
+                        decoding="async"
+                    />
+                </a>
+                <!--Navigation List-->
+                <nav class="demo-nav" role="navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button class="demo-toggle" aria-label="mobile menu toggle">
+                        <div class="demo-box" aria-hidden="true">
+                            <span class="demo-line demo-line1" aria-hidden="true"></span>
+                            <span class="demo-line demo-line2" aria-hidden="true"></span>
+                            <span class="demo-line demo-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <div class="demo-ul-wrapper">
+                        <ul id="demo-expanded" class="demo-ul" aria-expanded="false">
+                            <li class="demo-li">
+                                <a href="" class="demo-li-link demo-active"> Home </a>
+                            </li>
+                            <li class="demo-li">
+                                <a href="" class="demo-li-link"> About </a>
+                            </li>
+                            <li class="demo-li">
+                                <a href="" class="demo-li-link"> Services </a>
+                            </li>
+                            <li class="demo-li">
+                                <a href="" class="demo-li-link"> About Us </a>
+                            </li>
+                            <li class="demo-li">
+                                <a href="" class="demo-li-link"> FAQ </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="" class="demo-button-solid demo-nav-button">Contact Us</a>
             </div>
-            <section>
-                <h2>About me</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <div class="icons">
-                    <img class="icon" src="./icons/github.svg" alt="github icon" />
-                    <img class="icon" src="./icons/linkedin.svg" alt="linkedin icon" />
-                    <img class="icon" src="./icons/twitter.svg" alt="twitter icon" />
-                </div>
-            </section>
         </header>
-        <main>
-            <h2>My work</h2>
-            <section class="card-deck">
-                <div class="card">
+        <!-- Hero -->
+        <section id="hero-demo">
+            <div class="demo-container">
+                <div class="demo-content">
+                    <span class="demo-topper">Modern and Professional</span>
+                    <h1 class="demo-title">Health and Wellness</h1>
+                    <p class="demo-text">
+                        Health and wellness are at the heart of everything we do. Finding balance,
+                        building strength, and embracing a healthier lifestyle are essential for
+                        thriving in daily life. With the right approach, personal growth and
+                        physical vitality are within reach.
+                    </p>
+                    <a href="" class="demo-button-solid">Schedule An Appointment</a>
+                </div>
+                <!--Hero Image-->
+                <picture class="demo-picture">
+                    <!--Mobile-->
+                    <source media="(max-width: 600px)" srcset="./images/hero.jpg" />
+                    <!--Tablet-->
+                    <source media="(min-width: 601px)" srcset="./images/hero.jpg" />
+                    <!--Desktop-->
+                    <source media="(min-width: 1024px)" srcset="./images/hero.jpg" />
                     <img
-                        class="card-img-top"
-                        src="./images/pexels-mo-eid-1268975-17887489.jpg"
-                        alt=""
+                        aria-hidden="true"
+                        decoding="async"
+                        src="./images/hero.jpg"
+                        alt="therapy"
+                        width="570"
+                        height="701"
                     />
-                    <div class="card-body">
-                        <div class="card-title-container">
-                            <h3 class="card-title">Project Name</h3>
-                            <div class="icons">
-                                <img class="icon" src="./icons/github.svg" alt="github icon" />
+                </picture>
+            </div>
+            <svg
+                class="demo-wave"
+                width="1920"
+                height="179"
+                viewBox="0 0 1920 179"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z"
+                    fill="white"
+                />
+            </svg>
+        </section>
+        <!-- Services -->
+
+        <section id="services-demo">
+            <div class="demo-container">
+                <div class="demo-content">
+                    <span class="demo-topper">Our Services</span>
+                    <h2 class="demo-title">The Trusted Path with Wellness Experts</h2>
+                    <p class="demo-text">
+                        At our Wellness Center, we will help you achieve your health and wellness
+                        goals so you can focus on living your best life. We support individuals and
+                        families through their journeys toward better health, balance, and vitality.
+                    </p>
+                </div>
+                <ul class="demo-card-group">
+                    <li class="demo-item">
+                        <a href="" class="demo-link">
+                            <picture class="demo-picture">
+                                <source media="(max-width: 600px)" srcset="./images/holistic.jpg" />
+                                <source media="(min-width: 601px)" srcset="./images/holistic.jpg" />
                                 <img
-                                    class="icon"
-                                    src="./icons/link-variant.svg"
-                                    alt="external link icon"
+                                    loading="lazy"
+                                    decoding="async"
+                                    src="./images/holistic.jpg"
+                                    alt="cleaner"
+                                    width="413"
+                                    height="240"
+                                    aria-hidden="true"
                                 />
-                            </div>
-                        </div>
-                        <p class="card-text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                            explicabo.
-                        </p>
+                            </picture>
+                            <h3 class="demo-h3">Holistic Wellness</h3>
+                            <p class="demo-item-text">
+                                We've guided countless individuals on their journey to achieving a
+                                balanced and healthier lifestyle.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="demo-item">
+                        <a href="" class="demo-link">
+                            <picture class="demo-picture">
+                                <source media="(max-width: 600px)" srcset="./images/stress.jpg" />
+                                <source media="(min-width: 601px)" srcset="./images/stress.jpg" />
+                                <img
+                                    loading="lazy"
+                                    decoding="async"
+                                    src="./images/stress.jpg"
+                                    alt="cleaner"
+                                    width="413"
+                                    height="240"
+                                    aria-hidden="true"
+                                />
+                            </picture>
+                            <h3 class="demo-h3">Stress Relief</h3>
+                            <p class="demo-item-text">
+                                Programs We've supported thousands in reducing stress and embracing
+                                a more peaceful way of life.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="demo-item">
+                        <a href="" class="demo-link">
+                            <picture class="demo-picture">
+                                <source media="(max-width: 600px)" srcset="./images/physical.jpg" />
+                                <source media="(min-width: 601px)" srcset="./images/physical.jpg" />
+                                <img
+                                    loading="lazy"
+                                    decoding="async"
+                                    src="./images/physical.jpg"
+                                    alt="cleaner"
+                                    width="413"
+                                    height="240"
+                                    aria-hidden="true"
+                                />
+                            </picture>
+                            <h3 class="demo-h3">Physical Therapy</h3>
+                            <p class="demo-item-text">
+                                We've helped numerous people regain strength and mobility,
+                                empowering them to live pain-free.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="demo-item">
+                        <a href="" class="demo-link">
+                            <picture class="demo-picture">
+                                <source
+                                    media="(max-width: 600px)"
+                                    srcset="./images/nutritional.jpg"
+                                />
+                                <source
+                                    media="(min-width: 601px)"
+                                    srcset="./images/nutritional.jpg"
+                                />
+                                <img
+                                    loading="lazy"
+                                    decoding="async"
+                                    src="./images/nutritional.jpg"
+                                    alt="cleaner"
+                                    width="413"
+                                    height="240"
+                                    aria-hidden="true"
+                                />
+                            </picture>
+                            <h3 class="demo-h3">Nutritional Coaching</h3>
+                            <p class="demo-item-text">
+                                We've transformed the way thousands approach nutrition, helping them
+                                feel their best every day.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="demo-item">
+                        <a href="" class="demo-link">
+                            <picture class="demo-picture">
+                                <source media="(max-width: 600px)" srcset="./images/mindBody.jpg" />
+                                <source media="(min-width: 601px)" srcset="./images/mindBody.jpg" />
+                                <img
+                                    loading="lazy"
+                                    decoding="async"
+                                    src="./images/mindBody.jpg"
+                                    alt="cleaner"
+                                    width="413"
+                                    height="240"
+                                    aria-hidden="true"
+                                />
+                            </picture>
+                            <h3 class="demo-h3">Mind-Body Connection</h3>
+                            <p class="demo-item-text">
+                                We've assisted thousands in finding harmony between their physical
+                                and mental health for a fulfilling life.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="demo-item">
+                        <a href="" class="demo-link">
+                            <picture class="demo-picture">
+                                <source media="(max-width: 600px)" srcset="./images/health.jpg" />
+                                <source media="(min-width: 601px)" srcset="./images/health.jpg" />
+                                <img
+                                    loading="lazy"
+                                    decoding="async"
+                                    src="./images/health.jpg"
+                                    alt="cleaner"
+                                    width="413"
+                                    height="240"
+                                    aria-hidden="true"
+                                />
+                            </picture>
+                            <h3 class="demo-h3">Health Optimization</h3>
+                            <p class="demo-item-text">
+                                We've worked with thousands to unlock their potential through
+                                personalized wellness strategies.
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer id="demo-footer">
+            <div class="demo-container">
+                <!-- Logo Group -->
+                <div class="demo-logo-group">
+                    <a aria-label="go back to home" class="demo-logo" href="">
+                        <img
+                            class="demo-logo-img"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="./images/wellnessLogo.png"
+                            alt="logo"
+                            width="240"
+                            height="32"
+                        />
+                    </a>
+                    <p class="demo-text">
+                        Prioritize your well-being with a balanced approach to health. Embrace
+                        practices that nurture your body and mind, creating harmony in your daily
+                        life. Together, we build a foundation for lasting vitality and happiness.
+                    </p>
+                    <div class="demo-social">
+                        <a class="demo-social-link" aria-label="visit google profile" href="">
+                            <img
+                                class="demo-social-img"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg"
+                                alt="google"
+                                width="11"
+                                height="11"
+                            />
+                        </a>
+                        <a class="demo-social-link" aria-label="visit facebook profile" href="">
+                            <img
+                                class="demo-social-img"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg"
+                                alt="facebook"
+                                width="6"
+                                height="11"
+                            />
+                        </a>
+                        <a class="demo-social-link" aria-label="visit instagram profile" href="">
+                            <img
+                                class="demo-social-img"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg"
+                                alt="instagram"
+                                width="11"
+                                height="11"
+                            />
+                        </a>
                     </div>
                 </div>
-                <div class="card">
-                    <img
-                        class="card-img-top"
-                        src="./images/pexels-stephen-leonardi-587681991-27913531.jpg"
-                        alt=""
-                    />
-                    <div class="card-body">
-                        <div class="card-title-container">
-                            <h3 class="card-title">Project Name</h3>
-                            <div class="icons">
-                                <img class="icon" src="./icons/github.svg" alt="github icon" />
-                                <img
-                                    class="icon"
-                                    src="./icons/link-variant.svg"
-                                    alt="external link icon"
-                                />
-                            </div>
-                        </div>
-                        <p class="card-text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                            explicabo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img
-                        class="card-img-top"
-                        src="./images/pexels-tom-fournier-208942721-27956677.jpg"
-                        alt=""
-                    />
-                    <div class="card-body">
-                        <div class="card-title-container">
-                            <h3 class="card-title">Project Name</h3>
-                            <div class="icons">
-                                <img class="icon" src="./icons/github.svg" alt="github icon" />
-                                <img
-                                    class="icon"
-                                    src="./icons/link-variant.svg"
-                                    alt="external link icon"
-                                />
-                            </div>
-                        </div>
-                        <p class="card-text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                            explicabo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img
-                        class="card-img-top"
-                        src="./images/pexels-mo-eid-1268975-17887489.jpg"
-                        alt=""
-                    />
-                    <div class="card-body">
-                        <div class="card-title-container">
-                            <h3 class="card-title">Project Name</h3>
-                            <div class="icons">
-                                <img class="icon" src="./icons/github.svg" alt="github icon" />
-                                <img
-                                    class="icon"
-                                    src="./icons/link-variant.svg"
-                                    alt="external link icon"
-                                />
-                            </div>
-                        </div>
-                        <p class="card-text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                            explicabo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img
-                        class="card-img-top"
-                        src="./images/pexels-stephen-leonardi-587681991-27913531.jpg"
-                        alt=""
-                    />
-                    <div class="card-body">
-                        <div class="card-title-container">
-                            <h3 class="card-title">Project Name</h3>
-                            <div class="icons">
-                                <img class="icon" src="./icons/github.svg" alt="github icon" />
-                                <img
-                                    class="icon"
-                                    src="./icons/link-variant.svg"
-                                    alt="external link icon"
-                                />
-                            </div>
-                        </div>
-                        <p class="card-text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                            explicabo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img
-                        class="card-img-top"
-                        src="./images/pexels-tom-fournier-208942721-27956677.jpg"
-                        alt=""
-                    />
-                    <div class="card-body">
-                        <div class="card-title-container">
-                            <h3 class="card-title">Project Name</h3>
-                            <div class="icons">
-                                <img class="icon" src="./icons/github.svg" alt="github icon" />
-                                <img
-                                    class="icon"
-                                    src="./icons/link-variant.svg"
-                                    alt="external link icon"
-                                />
-                            </div>
-                        </div>
-                        <p class="card-text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                            explicabo.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <section class="contacts-container">
-                <h2>Contact me</h2>
-                <p>Please get in touch if you think our work cloud be mutually beneficial.</p>
-                <p>123 Random Road, Random Town, Random Country</p>
-                <div class="contact">
-                    <img class="icon" src="./icons/phone.svg" alt="phone icon" />
-                    <p>12345678</p>
-                </div>
-                <div class="contact">
-                    <img class="icon" src="./icons/email-variant.svg" alt="email icon" />
-                    <p>someone@somepalce.com</p>
-                </div>
-                <div class="icons">
-                    <img class="icon" src="./icons/github.svg" alt="github icon" />
-                    <img class="icon" src="./icons/linkedin.svg" alt="linkedin icon" />
-                    <img class="icon" src="./icons/twitter.svg" alt="twitter icon" />
-                </div>
-            </section>
-            <img src="holder.js/100x180/" alt="" />
+                <!-- Links -->
+                <ul class="demo-nav">
+                    <li class="demo-nav-li">
+                        <span class="demo-header">Services</span>
+                    </li>
+                    <li class="demo-nav-li">
+                        <a class="demo-nav-link" href="">About</a>
+                    </li>
+                    <li class="demo-nav-li">
+                        <a class="demo-nav-link" href="">Services</a>
+                    </li>
+                    <li class="demo-nav-li">
+                        <a class="demo-nav-link" href="">Portfolio</a>
+                    </li>
+                    <li class="demo-nav-li">
+                        <a class="demo-nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+                <!-- Contact Info -->
+                <ul class="demo-contact">
+                    <li class="demo-nav-li">
+                        <span class="demo-header">Contact</span>
+                    </li>
+                    <li class="demo-contact-li">
+                        <a class="demo-contact-link demo-address" href="">
+                            123 Avenue Street<br />
+                            Oak Harbor, WA 98101
+                        </a>
+                    </li>
+                    <li class="demo-contact-li">
+                        <a class="demo-contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
+                    </li>
+                    <li class="demo-contact-li">
+                        <a class="demo-contact-link" href="mailto:info@info.com">info@info.com</a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
